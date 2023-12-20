@@ -405,3 +405,108 @@ form button{
     margin: 20px auto 0;
     border-radius:30px;
 }
+
+/* Common styles */
+
+/* Your existing CSS code here */
+
+/* Media queries for mobile responsiveness */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .container {
+    padding: 5px 2%;
+  }
+
+  nav ul li {
+    margin: 10px 10px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .header-text {
+    margin-top: 15%;
+    font-size: 24px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  .workExperience h2 {
+    margin-left: 40px;
+  }
+
+  .skills h2 {
+    margin-left: 30px;
+  }
+
+  /* Other modifications as needed */
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .header-text {
+    margin-top: 10%;
+    font-size: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .workExperience h2 {
+    margin-left: 20px;
+  }
+
+  .skills h2 {
+    margin-left: 15px;
+  }
+
+  /* Other modifications as needed */
+}
+
+/* Smaller mobile devices */
+@media (max-width: 480px) {
+  nav ul li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .header-text {
+    margin-top: 5%;
+    font-size: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .workExperience h2 {
+    margin-left: 10px;
+  }
+
+  .skills h2 {
+    margin-left: 5px;
+  }
+
+  /* Other modifications as needed */
+}
+
