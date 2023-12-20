@@ -1,0 +1,407 @@
+    *{
+    margin: 0;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.5rem;}
+h4{font-size: 1.4rem;}
+p{font-size: 1.2rem;}
+
+#nav{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-position: center;
+    padding: auto;
+
+}
+.container{
+    padding: 5px 5%;
+    
+}
+
+.container p{
+    margin-top: .5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    width: 300px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    background: #ff004f;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+/*About*/
+
+
+#cv a{
+    text-decoration: none;
+    color: red;
+    margin-left: 30%;
+    text-align: center;
+    
+    
+}
+
+#cv img{
+    height: 1.9rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+}
+
+#cv p{
+    margin-top: 20px;
+}
+
+#cv h1, #cv h3{
+    text-align: center;
+
+}
+
+.flexDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexDisplayWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flexStart{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.smallGap{
+    gap: 0 1rem;
+    padding: 0.3rem 0;
+}
+
+.workExperience h2{
+    margin-left: 140px;
+}
+
+.workExperience img{
+    margin-left: 10px;
+}
+
+.skills h2{
+    margin-left: 65px;
+}
+
+/* cv */
+
+#cv{
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 3rem;
+    box-shadow: 0 0 10px #33333360;
+    position: relative;
+}
+
+header{width: 100%;
+
+}
+
+.workExperience{width: 65%;}
+
+.skills{width: 35%;}
+
+.education{width: 33%;}
+
+.courses{width: 37%;}
+
+.languages{width: 30%;}
+
+
+
+#cv section{align-self: flex-start;
+    text-align: center;
+
+}
+
+/* header */
+
+#cv header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.avatar{width: 24%;}
+
+.about{width: 100%;}
+
+
+
+
+.about{padding-top: 1.5rem;}
+
+.about .position{
+    color: red;
+    margin-bottom: 1rem;
+}
+
+
+.workExperience .pointers{padding: 1rem 2rem 2rem;}
+
+.workExperience .pointers .pointer{
+    padding: 0.6rem;
+    position: relative;
+}
+
+.workExperience .pointers .pointer::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    background: red;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+/* skills */
+
+.skills .progressBar{
+    width: 100%;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin: 0.6rem 0 2rem 0;
+    position: relative;
+}
+
+.skills .progressBar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: red;
+}
+
+.skill:nth-child(2) .progressBar::before{width: 90%;}
+.skill:nth-child(3) .progressBar::before{width: 80%;}
+.skill:nth-child(4) .progressBar::before{width: 60%;}
+.skill:nth-child(5) .progressBar::before{width: 80%;}
+.skill:nth-child(6) .progressBar::before{width: 50%;}
+.skill:nth-child(7) .progressBar::before{width: 90%;}
+.skill:nth-child(8) .progressBar::before{width: 60%;}
+.skill:nth-child(9) .progressBar::before{width: 60%;}
+
+/* education */
+
+.education .edu{padding-bottom: 2rem;}
+
+.edu .degree{padding: 0.3rem 0;}
+
+/* courses */
+
+.courses .course{padding-bottom: 1.8rem;}
+
+.courses h2, img{
+    margin-left: 8% ;
+}
+
+.courses{
+    margin-left: 10%;
+
+}
+.language:nth-child(3) .level{background: transparent;}
+.language:nth-child(4) .level{background: transparent;}
+.language:nth-child(4) .level::before{background: transparent;}
+
+
+
+/*WORK DONE*/
+
+/* Styles for card container and basic card layout */
+.card-container {
+    display: flex;
+    justify-content:flex-start  ;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    max-width: 40rem;
+    margin-left: 20%;
+}
+
+.card {
+    flex: 3;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    padding: 0.5rem; 
+    margin-left: 1 rem;
+    position: relative;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for additional information display */
+.more-info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    color: black;
+    z-index: 1;
+}
+
+.card.active .more-info {
+    display: block;
+}
+
+  .card img{
+    width: 75%;
+    height: auto;
+    display: block;
+    
+  }
+
+  .work{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .more-info{
+    text-align: center;
+    text-decoration: dashed;
+    text-shadow: #080808;
+  }
+
+  .card-sql{
+    display: flex;
+    flex-direction: column;
+  }
+/*Contact*/
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius:10px;
+}
+
+form h3{
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    
+}
+
+form button{
+    padding: 15px;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius:30px;
+}

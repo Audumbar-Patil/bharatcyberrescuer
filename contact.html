@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.j"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="./images/logo.png" class="logo" alt="cyber security">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="workdone.html">myWORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH </h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="text" id="phone" placeholder="PhoneNO" required>
+            <textarea id="message" rows="4" placeholder="Enter msg"></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.j"></script>
+    <script src="script.js"></script>
+</body>
+</html>
