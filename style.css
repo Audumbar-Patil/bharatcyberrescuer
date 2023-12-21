@@ -1,8 +1,10 @@
-    *{
+
+*{
     margin: 0;
     padding: 5px;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     
     
     
@@ -23,7 +25,7 @@ p{font-size: 1.2rem;}
 #nav{
     width: 100%;
     height: 100vh;
-    background-image: url("background.png");
+    background-image: url("./images/background.png");
     background-size: cover;
     background-position: center;
     padding: auto;
@@ -39,12 +41,20 @@ p{font-size: 1.2rem;}
 }
 
 nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo{
@@ -72,6 +82,8 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -109,7 +121,9 @@ nav ul li a:hover::after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 #cv p{
@@ -122,19 +136,36 @@ nav ul li a:hover::after{
 }
 
 .flexDisplay{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .flexDisplayWrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .flexStart{
-    justify-content: flex-start;
-    align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 2rem;
     padding: 2rem 0;
 }
@@ -161,7 +192,8 @@ nav ul li a:hover::after{
     max-width: 1200px;
     margin: 3rem auto;
     padding: 0 3rem;
-    box-shadow: 0 0 10px #33333360;
+    -webkit-box-shadow: 0 0 10px #33333360;
+            box-shadow: 0 0 10px #33333360;
     position: relative;
 }
 
@@ -181,7 +213,7 @@ header{width: 100%;
 
 
 
-#cv section{align-self: flex-start;
+#cv section{-ms-flex-item-align: start;align-self: flex-start;
     text-align: center;
 
 }
@@ -189,8 +221,12 @@ header{width: 100%;
 /* header */
 
 #cv header{
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 2rem 0;
     text-align: center;
 }
@@ -222,7 +258,9 @@ header{width: 100%;
     position: absolute;
     top: 50%;
     left: -5%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 9px;
     height: 9px;
     background: red;
@@ -287,35 +325,54 @@ header{width: 100%;
 
 /* Styles for card container and basic card layout */
 .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:flex-start  ;
+    -webkit-box-pack:start;
+        -ms-flex-pack:start;
+            justify-content:flex-start  ;
     gap: 1rem;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border: 1px solid black;
     max-width: 40rem;
     margin-left: 20%;
 }
 
 .card {
-    flex: 3;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
     overflow: hidden;
     border: 2px solid #ccc;
     padding: 0.5rem; 
     margin-left: 1 rem;
     position: relative;
     margin-bottom: 1rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     margin-top: 1rem;
-    justify-content: center;
-    align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 
 }
 
 .card:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
     z-index: 1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Styles for additional information display */
@@ -328,6 +385,8 @@ header{width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     color: black;
     z-index: 1;
@@ -352,28 +411,38 @@ header{width: 100%;
 
   .more-info{
     text-align: center;
-    text-decoration: dashed;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
     text-shadow: #080808;
   }
 
-  .card-sql{
-    display: flex;
-    flex-direction: column;
-  }
 /*Contact*/
 
 .contact{
     width: 100%;
     height: 100vh;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
@@ -405,108 +474,3 @@ form button{
     margin: 20px auto 0;
     border-radius:30px;
 }
-
-/* Common styles */
-
-/* Your existing CSS code here */
-
-/* Media queries for mobile responsiveness */
-
-/* Tablets and small desktops */
-@media (max-width: 1024px) {
-  .container {
-    padding: 5px 2%;
-  }
-
-  nav ul li {
-    margin: 10px 10px;
-  }
-
-  .logo {
-    width: 200px;
-  }
-
-  .header-text {
-    margin-top: 15%;
-    font-size: 24px;
-  }
-
-  .header-text h1 {
-    font-size: 40px;
-  }
-
-  .workExperience h2 {
-    margin-left: 40px;
-  }
-
-  .skills h2 {
-    margin-left: 30px;
-  }
-
-  /* Other modifications as needed */
-}
-
-/* Mobile devices */
-@media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .logo {
-    width: 150px;
-  }
-
-  .header-text {
-    margin-top: 10%;
-    font-size: 20px;
-  }
-
-  .header-text h1 {
-    font-size: 32px;
-    margin-top: 10px;
-  }
-
-  .workExperience h2 {
-    margin-left: 20px;
-  }
-
-  .skills h2 {
-    margin-left: 15px;
-  }
-
-  /* Other modifications as needed */
-}
-
-/* Smaller mobile devices */
-@media (max-width: 480px) {
-  nav ul li {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-
-  .logo {
-    width: 120px;
-  }
-
-  .header-text {
-    margin-top: 5%;
-    font-size: 18px;
-  }
-
-  .header-text h1 {
-    font-size: 24px;
-    margin-top: 10px;
-  }
-
-  .workExperience h2 {
-    margin-left: 10px;
-  }
-
-  .skills h2 {
-    margin-left: 5px;
-  }
-
-  /* Other modifications as needed */
-}
-
